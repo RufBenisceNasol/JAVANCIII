@@ -1,4 +1,4 @@
-public class TaskSheet116 {
+public class Tasksheet116 {
     public static void main(String[] args) {
 
         String input= "Kamusta";
