@@ -8,6 +8,7 @@ public class Tasksheet116 {
         StringBuilder sb= new StringBuilder(input);
 
         String reverseString=sb.reverse().toString();
+        System.out.println("Reversed word:" +reverseString);
         
         if (input.equals(reverseString)) {
             System.out.println("The input string is a palindrome");
