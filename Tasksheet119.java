@@ -19,6 +19,10 @@ public class Tasksheet119 {
 
     //return for Quotient
     private static float calQuo(float a, float b){
+        if (b == 0) {
+            System.out.println("The zero Value is not allowed");
+            return Float.NaN;
+        }
         return a/b;
     }
 
@@ -39,7 +43,12 @@ public class Tasksheet119 {
         System.out.println("The Sum is: " + formatOutput(sum));
         System.out.println("The Difference is: " + formatOutput(diff));
         System.out.println("The Product is: " + formatOutput(product));
-        System.out.println("The Quotient is: " + formatOutput(quotient));
+        if (Float.isNaN(quotient)) {
+            System.out.println("The quotient is: Undefined because it devided by zero");   
+        }else{
+            System.out.println("The Quotient is: " + formatOutput(quotient));
+        }
+        scan.close();
     }
 
     //method formatter
