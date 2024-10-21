@@ -34,19 +34,13 @@ public class Tasksheet119 {
 
         System.out.print("Enter your 2nd number: ");
         float y=scan.nextFloat();
-
-        float sum= calSum(x, y);
-        float diff= calDiff(x, y);
-        float product= calPro(x, y);
-        float quotient= calQuo(x, y);
-
-        System.out.println("The Sum is: " + formatOutput(sum));
-        System.out.println("The Difference is: " + formatOutput(diff));
-        System.out.println("The Product is: " + formatOutput(product));
-        if (Float.isNaN(quotient)) {
+        System.out.println("The Sum is: " + formatOutput(calSum(x, y)));
+        System.out.println("The Difference is: " + formatOutput(calDiff(x, y)));
+        System.out.println("The Product is: " + formatOutput(calPro(x, y)));
+        if (Float.isNaN(calQuo(x, y))) {
             System.out.println("The quotient is: Undefined because it devided by zero");   
         }else{
-            System.out.println("The Quotient is: " + formatOutput(quotient));
+            System.out.println("The Quotient is: " + formatOutput(calQuo(x, y)));
         }
         scan.close();
     }
