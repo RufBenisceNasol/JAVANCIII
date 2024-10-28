@@ -19,7 +19,7 @@ public class Tasksheet124 {
 
         Predicate<Integer> isPositive= num -> num > 0;
         Predicate<Integer> isEven= num -> num %2==0;
-        Predicate<Integer> isGreaterThanTen= num -> num >= 10;
+        Predicate<Integer> isGreaterThanTen= num -> num > 10;
         
         System.out.println("Original List: "+ numbers);
         System.out.println("Positive Numbers: " + filteredNum(numbers, isPositive));
