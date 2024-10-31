@@ -3,7 +3,7 @@ class Vehicle{
     String model;
     int year;
 
-    public Vehicle(String make, String model, int year){
+        Vehicle(String make, String model, int year){
         this.make=make;
         this.model= model;
         this.year= year;
@@ -14,7 +14,7 @@ class Car extends Vehicle{
     
     int numOfDoors;
 
-    public Car(String make, String model, int year, int numOfDoors){
+        Car(String make, String model, int year, int numOfDoors){
         super(make, model, year);
         this.numOfDoors=numOfDoors;
     }
