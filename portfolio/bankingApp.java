@@ -117,14 +117,14 @@ public class bankingApp {
 
     private static void checkBalance() {
         clearScreen();  // Clear screen before checking balance
-        System.out.println("========================");
+        System.out.println("=========BALANCE=========");
         
         if (loggedInUser.getBalance() < 0) {
             System.out.println("Error: Negative balance is not allowed. Please contact support.");
         } else if (loggedInUser.getBalance() == 0) {
             System.out.println("Your balance is 0. You need to cash in to perform transactions.");
         } else {
-            System.out.println("Your Balance: " + loggedInUser.getBalance());
+            System.out.println(loggedInUser.getBalance());
         }
         
         waitForEnter("Press Enter to return to the menu...");
@@ -132,6 +132,7 @@ public class bankingApp {
 
     private static void cashIn() {
         clearScreen();  // Clear screen before cash-in
+        System.out.println("=========CASH IN=========");
         while (true) {
             System.out.print("Enter amount to cash-in: ");
             if (!scanner.hasNextDouble()) {
@@ -157,7 +158,9 @@ public class bankingApp {
     private static void moneyTransfer() {
         int receiverId;
         double amount;
+        clearScreen();
 
+        System.out.println("=========CASH TRANSFER=========");
         // Prompt for recipient user ID with validation
         while (true) {
             System.out.print("Enter recipient user ID: ");
